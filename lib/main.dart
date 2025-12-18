@@ -35,8 +35,8 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       // Use the provider's theme mode, default to dark if not set
-      themeMode: themeProvider.themeMode, 
-      home: AuthWrapper(),
+      themeMode: themeProvider.themeMode,
+      home: const AuthWrapper(),
       routes: AppRoutes.routes,
     );
   }

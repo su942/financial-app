@@ -10,9 +10,10 @@ class ExpenseChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (transactions.isEmpty)
+    if (transactions.isEmpty) {
       return const Center(
           child: Text("No data", style: TextStyle(color: Colors.white)));
+    }
 
     // Simple logic: Group by day or category (mocking category by iconDetails for now)
     // For this prototype, let's show a fake weekly trend based on amount

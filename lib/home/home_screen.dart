@@ -17,16 +17,16 @@ class _HomeScreenState extends State<HomeScreen> {
   int _index = 0;
 
   final pages = [
-    DashboardScreen(),
-    ChatScreen(),
-    GoalScreen(),
-    SettingsScreen()
+    const DashboardScreen(),
+    const ChatScreen(),
+    const GoalScreen(),
+    const SettingsScreen()
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: AppDrawer(),
+      drawer: const AppDrawer(),
       body: pages[_index],
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(

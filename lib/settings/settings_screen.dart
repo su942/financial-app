@@ -59,7 +59,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             trailing: const Icon(Icons.arrow_forward_ios, size: 16),
             onTap: () {
               Navigator.push(context,
-                      MaterialPageRoute(builder: (c) => ProfileScreen()))
+                      MaterialPageRoute(builder: (c) => const ProfileScreen()))
                   .then((_) => _loadProfile());
             },
           ),

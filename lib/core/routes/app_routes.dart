@@ -5,8 +5,8 @@ import '../../settings/settings_screen.dart';
 
 class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
-    '/login': (context) => LoginScreen(),
-    '/home': (context) => HomeScreen(),
-    '/settings': (context) => SettingsScreen(),
+    '/login': (context) => const LoginScreen(),
+    '/home': (context) => const HomeScreen(),
+    '/settings': (context) => const SettingsScreen(),
   };
 }

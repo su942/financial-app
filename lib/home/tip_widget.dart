@@ -7,8 +7,8 @@ class TipWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.push(
-          context, MaterialPageRoute(builder: (_) => ExpenseDetailScreen())),
+      onTap: () => Navigator.push(context,
+          MaterialPageRoute(builder: (_) => const ExpenseDetailScreen())),
       child: Card(
         margin: const EdgeInsets.all(16),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
